@@ -9,3 +9,8 @@ npm i create-router-dom axios
 Request:
 php artisan make:request LoginRequest
 php artisan make:request SignupRequest
+php artisan make:request StoreUserRequest
+php artisan make:request UpdateUserRequest
+
+Resources:
+php artisan make:resource UserResource
