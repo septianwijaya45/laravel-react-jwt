@@ -2,4 +2,4 @@ composer create-project laravel/laravel your-app-name
 npm create vite => choose react => name the frontend project
 
 
-npm i create-router-dom
+npm i create-router-dom axios
