@@ -1,12 +1,12 @@
-import React, { createRef, useState } from "react";
+import React, { createRef, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 import axiosClient from "../axios-client";
 
 const Login = () => {
     const [message, setMessage] = useState(null);
-    const emailRef = createRef();
-    const passwordRef = createRef();
+  const emailRef = useRef();
+  const passwordRef = useRef();
     const { setUser, setToken } = useStateContext();
 
     const onSubmit = (ev) => {
@@ -52,7 +52,11 @@ const Login = () => {
                             ))}
                         </div>
                     )}
-                    <input ref={emailRef} type="email" placeholder="Email" />
+                    <input
+                        ref={emailRef}
+                        type="email"
+                        placeholder="Email Address"
+                    />
                     <input
                         ref={passwordRef}
                         type="password"
