@@ -3,3 +3,9 @@ npm create vite => choose react => name the frontend project
 
 
 npm i create-router-dom axios
+
+
+====== LARAVEL =====
+Request:
+php artisan make:request LoginRequest
+php artisan make:request SignupRequest
