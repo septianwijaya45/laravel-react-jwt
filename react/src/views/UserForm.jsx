@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axiosClient from "../axios-client.js";
-import { useStateContext } from "../context/ContextProvider.jsx";
+import { useStateContext } from "../contexts/ContextProvider.jsx";
 
 export default function UserForm() {
     const navigate = useNavigate();
